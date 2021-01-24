@@ -8,9 +8,7 @@ max = int(1000)
 
 ans = '0'
 while ans != 'you win':
-    a = 'lier'
-    guess = int((max - min) / 2) + min
-    while a == 'lier':
+        guess = int((max - min) / 2) + min
         print(f'Zgaduję: {guess}')
         ans = input('Am I right? ')
         if ans == 'you win':
@@ -18,11 +16,8 @@ while ans != 'you win':
             break
         elif guess == min or guess == max:
             print("You lied to me!")
-            a = 'lier'
             break
         elif ans == 'too big':
             max = guess
-            a = '0'
         elif ans == 'too small':
             min = guess
-            a = '0'
